@@ -10,8 +10,6 @@ export default function AddCategory({ setCategories }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // setCategories(e)
-    // console.log(e);
     setCategories(categ => [inputValue, ...categ]);
     setInputValue("");
   };
